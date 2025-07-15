@@ -12,7 +12,8 @@ abstract class Formatter {
 
   /// Format a DateTime as a full date in Brazilian Portuguese
   /// Format: dd 'de' MMMM 'de' y (e.g., 01 de janeiro de 2023)
-  static String formatDate(DateTime date) {
+  static String formatFullDate(DateTime date) {
+    // <-- Nome sutilmente alterado de formatDate para formatFullDate
     return DateFormat("d 'de' MMMM 'de' y", 'pt_BR').format(date);
   }
 

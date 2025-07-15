@@ -58,6 +58,8 @@ class HomePageController {
   // final GetAllTransactionsUseCaseImpl _getAllTransactions;
   // final GetTransactionUseCaseImpl _getTransaction;
 
+  
+  
   // commands
   late final Command0<List<TransactionEntity>, Failure> load;
   late final Command1<void, Failure, TransactionEntity> saveTransaction;
