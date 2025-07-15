@@ -116,7 +116,11 @@ class _TransactionFormState extends State<TransactionForm> {
       // Mostra uma mensagem de sucesso
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('${widget.type.nameSingular} Adicionada com Sucesso!'),
+          content: Text(
+            widget.transactionToEdit == null
+                ? '${widget.type.nameSingular} Adicionada com Sucesso!'
+                : '${widget.type.nameSingular} Alterada com Sucesso!',
+          ),
           backgroundColor: widget.color,
           duration: const Duration(seconds: 2),
         ),
